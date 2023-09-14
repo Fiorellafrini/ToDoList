@@ -61,7 +61,7 @@ export default function Todo({ item, onUpdate, onDelete, onComplete }) {
           <FaEdit /> Edit
           </button>
           <button className="buttonDelete" onClick={() => onDelete(item.id)}>
-          <FaTrashAlt /> Update
+          <FaTrashAlt /> 
           </button>
         </div>
       )}
