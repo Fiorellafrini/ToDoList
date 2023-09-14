@@ -21,6 +21,11 @@
   margin-top: -10%;
 }
 
+.search {
+  margin-left: 42%;
+
+}
+
 .todoInput {
   flex-grow: 1;
   width: 100%;

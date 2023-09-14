@@ -66,5 +66,6 @@ export default function Todo({ item, onUpdate, onDelete, onComplete }) {
         </div>
       )}
     </div>
+
   );
 }
