@@ -3,7 +3,6 @@
 .todoContainer {
   width: 500px;
   margin: 100px auto;
-
   display: flex;
   flex-direction: column;
 }
@@ -13,12 +12,13 @@
   font-family: "Tilt Prism", cursive;
   margin-left: 40%;
   font-size: 300%;
-  margin-top: 5%;
+  margin-top: 2%;
 }
 
 .todoCreateForm {
   display: flex;
   gap: 5px;
+  margin-top: -10%;
 }
 
 .todoInput {
