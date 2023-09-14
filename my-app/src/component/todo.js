@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "./todoApp.css";
+import { FaEdit, FaTrashAlt } from 'react-icons/fa'; // Importa el icono de edición de FontAwesome
+
 
 export default function Todo({ item, onUpdate, onDelete, onComplete }) {
   const [isEdit, setIsEdit] = useState(false);
@@ -56,10 +58,10 @@ export default function Todo({ item, onUpdate, onDelete, onComplete }) {
             {item.title}
           </span>
           <button className="button" onClick={() => setIsEdit(true)}>
-            Edit
+          <FaEdit /> Edit
           </button>
           <button className="buttonDelete" onClick={() => onDelete(item.id)}>
-            Update
+          <FaTrashAlt /> Update
           </button>
         </div>
       )}

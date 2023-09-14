@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Todo from "./todo";
 import "./todoApp.css";
+import { FaPlus } from 'react-icons/fa'; // Importa el icono de edición de FontAwesome
+
 
 export default function TodoApp() {
   const [title, setTitle] = useState("");
@@ -49,6 +51,8 @@ export default function TodoApp() {
     setTodos([...temp]);
   }
   return (
+    <div className="conteinerList">
+      <h1 className="titulo"> To Do List</h1>
     <div className="todoContainer">
       <form className="todoCreateForm" onSubmit={handleSubmit}>
         <input
@@ -56,13 +60,15 @@ export default function TodoApp() {
           value={title}
           onChange={handleInputChange}
         />
-
-        <input
+        {/* <input
           type={"submit"}
           value="Create todo"
           className="buttonCreate"
-          // onClick={handleSubmit}
-        />
+
+        /> */}
+        <button type="submit" className="buttonCreate">
+        <FaPlus /> 
+      </button>
       </form>
 
       <div className="todosContainer">
@@ -77,5 +83,7 @@ export default function TodoApp() {
         ))}
       </div>
     </div>
+    </div>
+
   );
 }
